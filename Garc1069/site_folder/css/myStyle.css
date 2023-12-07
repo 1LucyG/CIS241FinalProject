@@ -1,0 +1,673 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+.header{
+	min-height:80vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url(../images/home.jpg);
+	background-position:center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display:flex;
+	padding:2% 6%;
+	justify-content:space-between;
+	align-items:center;
+}
+nav img{
+	width:100px;
+	opacity:0.5;
+}
+.nav-links{
+	flex:1;
+	text-align:right;
+}
+.nav-links ul li{
+	list-style:none;
+	display: inline-block;
+	padding:8px 12px;
+	position:relative;
+}
+.nav-links ul li a{
+	color:#fff;
+	text-decoration:none;
+	font-size:15px;
+}
+.nav-links ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:#f44336;
+	display:block;
+	margin:auto;
+	transition:0.5s;
+}
+.nav-links ul li:hover::after{
+	width:100%;
+}
+.text-box{
+	width:90%;
+	color:#fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;	
+}
+.text-box h1{
+	font-size: 40px;
+}
+.text-box p{
+	margin:10px 0 40px;
+	font-size:14px;
+	color:#fff;	
+}
+/*--------------------personal----*/
+.personal{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+	
+}
+h1{
+	font-size:36px;
+	font-weight:600;
+}
+p{
+	color:black;
+	font-size:14px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+}
+.row{
+	margin-top:5%;
+	display:flex;
+	justify-content:space-between;
+}
+.personal-col{
+	flex-basis:31%;
+	background:#fff3f3;
+	border-radius: 10px;
+	margin-bottom:5%;
+	padding:20px 12px;
+	box-sizing:border-box;
+	transition:0.5s;
+}
+h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+}
+.personal-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.gallery{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	padding-top:50px;
+}
+
+.gallery-col{
+	flex-basis:32%;
+	border-radius:10px;
+	margin-bottom:30px;
+	position:relative;
+	overflow:hidden;
+}
+.gallery-col img{
+	width:100%;
+	display:block;
+}
+.layer{
+	background:transparent;
+	height:90%;
+	width:45%;
+	position:absolute;
+	top:0;
+	left:0;
+	transition:0.5s;
+}
+.layer:hover{
+	background:rgba(226,0,0,0.7);
+}
+.layer h3{
+	width:100%;
+	font-weight:500;
+	color: #fff;
+	font-size:26px;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	position:absolute;
+	opacity:0;
+	transition:0.5s;
+	
+}
+.layer:hover h3{
+	bottom:49%;
+	opacity:1;
+}
+/*---gallerycitation---*/
+
+.gallerycitation{
+	color: #888; /* Adjust the color to a less attention-grabbing shade */
+font-size: 10px; /* Adjst the font size to a smaller value */
+margin-right:200px;
+}
+/*---------footer----------------*/
+.footer{
+	width:100%;
+	text-align:center;
+	padding:30px 0;
+}
+.footer h4{
+	margin-bottom:25px;
+	margin-top:20px;
+	font-weight:600;
+}
+
+/*-------------Resume--------------*/
+/*-----First table-----*/
+.resume-2 {
+background-color: #f2f2f2;
+padding: 5px;
+}
+
+.resume-col2 {
+display: flex;
+justify-content:right;
+}
+
+table {
+border-collapse: collapse;
+width: 80%;
+margin-top: 5px;
+}
+
+td {
+padding: 10px;
+text-align: center;
+border: 10px solid #00008B;
+}
+
+img {
+max-width: 200px;
+max-height:300px;
+border-radius: 15%;
+
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+li {
+margin-bottom: 5px;
+}
+/***/
+.resume-2{
+	width:80%;
+	margin:auto;
+	padding-top:25px;
+	padding-bottom:30px;
+	
+}
+.resume-col2{
+	flex-basis:100%;
+	padding:30px 2px;
+	
+}
+.skillsList li{
+list-style-type: square;
+list-style-position: inside;
+text-align:left;
+margin-bottom: 2px; /* Decrease the margin between the list items */
+padding-left: 2px; /* Increase the padding to move the bullets closer to the paragraphs */
+}
+
+
+.resume-col2 h1{
+	padding-top:0;
+	text-align:center;
+}
+
+.resume-col2 p{
+	padding:15px 0 25px;
+	
+}
+.resume-col2 img {
+width: 300px;
+height: 720px;
+float:left;
+margin-right:10px;
+}
+.table-frame {
+border-style: solid;
+border-width: 10px;
+border-color:  #00008B;
+background-color:#f2f2f2;
+}
+/*------------------Resume content-------------------*/
+
+
+.sub-header{
+	min-height:50vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../images/idea.jpg);
+	background-position:center;
+	background-size: cover;
+	position: relative;
+	text-align:center;
+	color:#fff;
+	
+}
+.sub-header h1{
+	margin-top:100px;
+	
+}
+.resume-l{
+	
+	width:50%;
+	margin:auto;
+	padding-top:60px;
+	padding-bottom:40px;
+}
+.B li{
+	list-style-type: circle;
+list-style-position: inside;
+text-align:left;
+margin-bottom: 2px; /* Decrease the margin between the list items */
+padding-left: 2px; /* Increase the padding to move the bullets closer to the paragraphs */
+	
+}
+.resume-col{
+	
+	flex-basis:40%;
+	padding:30px 2px;
+	
+}
+.resume-col img{
+	width:100%;
+}
+.resume-col h1{
+	padding:10px;
+	text-align:center;
+}
+.resume-col p{
+	padding:15px 0 25px;
+}
+/*--citation--*/
+.ideacite {
+color: #888; /* Adjust the color to a less attention-grabbing shade */
+font-size: 10px; /* Adjst the font size to a smaller value */
+}
+.resumecitation{
+color: #888; /* Adjust the color to a less attention-grabbing shade */
+font-size: 10px; /* Adjst the font size to a smaller value */	
+text-align: center; /* Align the text to the center */
+margin: 0 auto; /* Center the paragraph horizontally by setting margin */
+
+}
+/*--------------------------INTEREST-----------*/
+
+.sub-header1{
+	min-height:50vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url(../images/life1.jpg);
+	background-position:center;
+	background-size: cover;
+	position: relative;
+	text-align:center;
+	color:#fff;
+	
+}
+.sub-header h1{
+	margin-top:100px;
+	
+}
+
+
+
+.interest{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top: 100px;
+}
+
+.interest-col{
+	flex-basis:31%;
+	border-radius:10px;
+	margin-bottom:5%;
+	text-align:left;
+	
+}
+.interest-col img{
+	width:100%;
+	border-radius:10px;
+}
+.interest-col p{
+	padding:0;
+}
+.interest-col h3{
+	margin-top:16px;
+	margin-bottom:15px;
+	text-align: left;
+}
+/*-------------interest1--------------*/
+
+.interest1 {
+display:flex;
+background-color: lightcyan;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+
+}
+.interest-left{
+	flex:1px;
+}
+
+.interest1 h2 {
+color: #333;
+font-size: 20px;
+margin-bottom: 10px;
+text-align: left;
+}
+
+.interest1 ul{
+list-style-type:square;
+padding:0;
+margin: 0;
+text-align: left;
+}
+.A li{
+list-style-type:square;
+
+}
+
+.interest1 li {
+margin-bottom: 0px;
+}
+
+.interest1 li a {
+color: #555;
+text-decoration: none;
+font-size: 18px;
+}
+
+.interest1 li a:hover {
+color: #000;
+font-weight: bold;
+}
+/*--video---*/
+.interest-right {
+	flex:1px;
+float: right;
+margin-left: 80px;
+}
+
+
+/*---citation--*/
+.interestcitation{
+	color: #888; /* Adjust the color to a less attention-grabbing shade */
+font-size: 10px; /* Adjst the font size to a smaller value */
+}
+.highlighZ{
+color:black;
+font-weight:bold;
+font-size:14px;
+}	
+
+/*-------------reflections-------------*/
+
+.sub-header2{
+	min-height:50vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url(../images/dandelion1.jpg);
+	background-position:center;
+	background-size: cover;
+	position: relative;
+	text-align:center;
+	color:#fff;
+	
+}
+
+.reflection1{
+	width: 80%;
+	margin:auto;
+	padding:60px 0;
+	
+}
+.reflect-left{
+	flex-basis:65%;
+}
+
+.reflect-left img{
+	max-width:80%;
+	max-height:80%;
+}
+
+.reflect-left h2{
+	color:#222;
+	font-style: italic;
+	font-weight:600;
+	margin:30px 0;
+}
+.reflect-left p{
+	color:#999;
+	padding:0;
+}
+.highlight {
+color: green;
+font-weight:bold;
+}
+.reflect-right{
+flex-basis:32%;
+float:right;
+}
+.right-section{
+	float: right;
+}
+	
+.reflect-right h3{
+	background:#f44336;
+	color:#fff;
+	padding:7px 0;
+	font-size:16px;
+	margin-bottom:20px;	
+}
+
+.comment-box{
+	border:1px solid #ccc;
+	margin:50px 0;
+	padding:10px 20px;
+}
+.comment-form{
+background-image: url(../images/commentb.jpg);
+background-position: center;
+background-size: 50% 50%;
+}
+
+.comment-box h3{
+	text-align:left;
+}
+.comment-form input, .comment-form textarea{
+	width:100%;
+	padding:10px;
+	margin:15px 0;
+	box-sizing:border-box;
+	border:none;
+	outline:none;
+	background:#f0f0f0;
+}
+.comment-form button{
+	margin:10px 0;
+}
+/*-- citation--*/
+.reflectioncitation {
+	color: #888; /* Adjust the color to a less attention-grabbing shade */
+font-size: 10px; /* Adjst the font size to a smaller value */
+}
+
+/*---------------GUESTBOOK-------------------------*/
+.sub-header3{
+	min-height:50vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)), url(../images/vintage1.jpg);
+	background-position:center;
+	background-size: cover;
+	position: relative;
+	text-align:center;
+	color:#fff;
+	
+}
+
+
+
+.guestbook {
+background-size:80%;
+background-color: rgba(255, 255, 255, 0.3);
+padding: 20px;
+border-radius: 10px;
+}
+
+.Comment-box {
+margin-bottom: 20px;
+}
+
+h3 {
+color: #333;
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+form {
+background-image:url(../images/letter.jpg);
+background-size:60%;	
+margin-top: 20px;
+}
+
+fieldset {
+border: none;
+padding: 10px;
+margin-bottom: 20px;
+color:white;
+}
+
+legend {
+font-weight: bold;
+font-size: 25px;
+color: white;
+margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+width: 50%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+margin-right: 5px;
+}
+
+select {
+width: 50%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+
+}
+
+input[type="submit"],
+input[type="reset"] {
+padding: 10px 20px;
+background-color: #333;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+background-color: #555;
+}
+input[type="text"],
+textarea,
+select {
+width: 30%; /* Adjust the value as needed */
+}
+
+
+
+/* Apply styling to the table */
+.table-frame {
+border-collapse: collapse;
+width: 100%;
+}
+
+/* Style the table headers */
+.table-frame th {
+background-color: #f2f2f2;
+padding: 10px;
+text-align: left;
+}
+
+/* Style the table cells */
+.table-frame td {
+padding: 10px;
+}
+
+/* Apply styling to the unordered list */
+.table-frame ul {
+list-style-type: none;
+padding-left: 0;
+}
+
+/* Style the list items */
+.table-frame li {
+margin-bottom: 5px;
+}
+
+/* Apply styling to the ordered list */
+.table-frame ol {
+padding-left: 20px;
+}
+
+/* Style the list items */
+.table-frame li {
+margin-bottom: 5px;
+}
+
+/* Apply styling to the resume section */
+.resume-l {
+background-color: #f2f2f2;
+padding: 20px;
+margin-top: 20px;
+}
+
+/* Style the heading within the resume section */
+.resume-l h2 {
+margin-bottom: 10px;
+}
+
+/* Style the paragraph within the resume section */
+.resume-l p {
+margin-bottom: 0;
+}
